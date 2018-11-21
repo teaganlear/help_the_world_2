@@ -1,0 +1,62 @@
+{% load static %}
+
+<style>
+  h1{
+  	background-color:#583e82;
+  	color:#FFF;
+  	padding:0;
+  	margin:0;
+  }
+  ul{
+  	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#56bf26;
+
+	}
+  li {
+    float: right;
+  }
+	
+	li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  body{
+		margin: 0;
+		padding: 0;
+	}
+}
+
+li a:hover {
+    background-color: #111;
+}
+  }
+</style>
+
+<html>
+
+	<body>
+
+		<center><h1 style="font-size:83px">How You Can Help The World</h1></center>
+
+		<div class="navigation">
+			<ul style="padding-right:1rem">
+
+				<li><a style="font-size:1.5rem"href='/'>Home</a></li>
+			  <li><a style="font-size:1.5rem"href='/time'>Time</a></li> 
+			  <li><a style="font-size:1.5rem"href='/money'>Money</a></li> 
+			  <li><a style="font-size:1.5rem"href='/resources'>Resources</a></li>
+
+			</ul>
+		</div>
+
+		{% block content %}
+		{% endblock %}
+
+	</body>
+</html>
